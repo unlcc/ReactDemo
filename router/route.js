@@ -1,4 +1,4 @@
-import Home from '../src/components/Home.jsx';
+import Home from '../src/Home.jsx';
 
 // export const routes = [
 //     { 
