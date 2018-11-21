@@ -1,6 +1,8 @@
 import React from 'react';
 import { TabBar } from 'antd-mobile';
 
+import Hot from './Hot/Hot.jsx';
+
 export default class Root extends React.Component{
     constructor(props) {
       super(props);
@@ -18,8 +20,8 @@ export default class Root extends React.Component{
                     tintColor="#33A3F4"
                     barTintColor="white">
                     <TabBar.Item
-                        title="Life"
-                        key="Life"
+                        title="热映"
+                        key="Hot"
                         icon={<div style={{
                         width: '22px',
                         height: '22px',
@@ -38,7 +40,7 @@ export default class Root extends React.Component{
                                 selectedTab: 'blueTab',
                             });
                         }}>
-                        1
+                        <Hot name={'asas'}></Hot>
                     </TabBar.Item>
                     <TabBar.Item
                         icon={

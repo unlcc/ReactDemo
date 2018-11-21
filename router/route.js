@@ -1,25 +1,14 @@
 import Home from '../src/Home.jsx';
-
-// export const routes = [
-//     { 
-//         component: Root,
-//         routes: [
-//             { 
-//                 path: '/',
-//                 exact: true,
-//                 component: Home
-//             },
-//             { 
-//                 path: '/child',
-//                 component: Child,
-//             }
-//         ]
-//     }
-// ]
-
+import Detail from '../src/Hot/component/Detail.jsx'
 
 export const routes = [
     {
         component: Home,
+        routes: [
+            {
+                path: '/detail',
+                component: Detail
+            }
+        ]
     }
 ]
