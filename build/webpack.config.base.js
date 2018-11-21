@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const copyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: path.resolve(__dirname, '../src', 'index.jsx'),
+    entry: path.resolve(__dirname, '../', 'index.jsx'),
     output: {
         path: DIST_PATH,
         publicPath: "",
@@ -81,7 +81,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new copyWebpackPlugin([{//复制static到dist
-            from: path.resolve(__dirname, '..') + '/src/static',//打包的静态资源目录地址
+            from: path.resolve(__dirname, '..') + '/static',//打包的静态资源目录地址
             to: './static' //打包到dist下面的static
         }]),
         new HtmlWebpackPlugin({
