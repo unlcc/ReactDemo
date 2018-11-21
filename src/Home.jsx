@@ -40,7 +40,7 @@ export default class Root extends React.Component{
                                 selectedTab: 'blueTab',
                             });
                         }}>
-                        <Hot name={'asas'}></Hot>
+                        <Hot name={'asas'} ></Hot>
                     </TabBar.Item>
                     <TabBar.Item
                         icon={
